@@ -3,8 +3,8 @@ const scholarships = [
   { name: "Beasiswa Sarjana (S1)", url: "beasiswas1.html" },
   { name: "Beasiswa Magister (S2)", url: "beasiswas2.html" },
   { name: "Beasiswa Doktor (S3)", url: "beasiswas3.html" },
-  { name: "5 Manfaat Toefl", url: "../berita/post1.html" },
-  { name: "Tips Study Abroad", url: "../tips/tips1.html" },
+  { name: "5 Manfaat Toefl", url: "/BEASISWAKU/berita/post1.html" },
+  { name: "Tips Study Abroad", url: "/BEASISWAKU/tips/tips1.html" },
 ];
 
 // Fungsi pencarian dan render dropdown
@@ -77,9 +77,9 @@ document.getElementById("searchButton").addEventListener("click", function () {
       } else if (query.toLowerCase().includes("doktor")) {
           window.location.href = `beasiswas3.html?search=${encodeURIComponent(query)}`;
       } else if (query.toLowerCase().includes("toefl")) {
-          window.location.href = `../berita/post1.html?search=${encodeURIComponent(query)}`;
+          window.location.href = `/BEASISWAKU/berita/post1.html?search=${encodeURIComponent(query)}`;
       } else if (query.toLowerCase().includes("study abroad")) {
-          window.location.href = `../tips/tips1.html?search=${encodeURIComponent(query)}`;
+          window.location.href = `/BEASISWAKU/tips/tips1.html?search=${encodeURIComponent(query)}`;
       } else {
           window.location.href = `beasiswas1.html?search=${encodeURIComponent(query)}`;
       }
