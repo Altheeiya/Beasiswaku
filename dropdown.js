@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     },
     {
-      threshold: 0.1, // Elemen minimal 10% terlihat untuk memulai animasi
+      threshold: 0.1, 
     }
   );
 
